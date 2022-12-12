@@ -1,6 +1,6 @@
 pub fn main(input: String) {
   println!(
-    "number of pairs that the range overlap: {}",  // 947 too high, 410 too low
+    "number of pairs that the range overlap: {}", 
     input.lines().filter(|line| {
       let (first_pair, second_pair) = line.split_once(',').unwrap();
       let ((a,b), (c,d)) = (first_pair.split_once('-').unwrap(), second_pair.split_once('-').unwrap());
